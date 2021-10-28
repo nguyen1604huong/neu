@@ -1,0 +1,263 @@
+:root {
+    --main-text-font: Arial, Helvetica, sans-serif;
+}
+.container{
+	width: 100%;
+	height: auto;
+}
+.menu{
+	width: 100%;
+	height: 120px;
+	background-color: rgb(255, 186, 0);
+}
+.up{
+	width: 80%;
+	height: 70px;
+	margin: 0px auto;
+}
+.up ul{
+	list-style: none;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.up ul li{
+	display: inline-block;
+	padding:10px;
+}
+.up ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+.up ul li a img{
+	vertical-align: middle;
+}
+.logo a img{
+	width: 80%;
+	height: 50px;
+	margin-left: 10px;
+	border-radius: 50px;
+}
+ul.menu_child {
+	position: absolute;
+	width: 225px;
+	background-color: rgb(255, 186, 0);
+	z-index: 9999;
+}
+ul.menu_child li {
+	padding: 15px 0 0 0 ;
+	float: none;
+	display: none;
+}
+.menu ul li:hover ul.menu_child li {
+	display: block;	
+}
+ul.menu_child li:hover{
+	background-color: rgb(226, 64, 0);
+}
+.down{
+	height: 50px;
+	width: 80%;
+	margin: 0 auto;
+}
+.search{
+	height: 40px;
+	width: 550px;
+	background-color: white;
+	margin-left: 60px;
+	border-radius: 5px;
+}
+.search input{
+	width: 480px;
+	height: 35px;
+	border: 0px;
+	padding-left: 20px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+.search button{
+	border: 0px;
+}
+.search button img{
+	width: 20px;
+	height: auto;
+	vertical-align: middle;
+}
+.content{
+	width: 1000px;
+	margin: 10px auto;
+	font-family: var(--main-text-font);
+}
+.before{
+	border-bottom: 1px solid black;
+}
+.before a{
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+}
+.before a:hover{
+	text-decoration: underline;
+}
+.after{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 150px 150px 150px 150px  150px 150px ;
+	grid-template-rows: 150px 150px 150px;
+	grid-gap: 10px;
+}
+.item img{
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+	border: 1px solid black;	
+}
+.item img:hover{transform: scale(1.05);}
+.item1{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+.item1 img{
+	width: 310px;
+}
+.item2{
+	grid-column-start: 3;
+	grid-column-end: span 2;
+}
+.item2 img{
+	width: 310px;
+}
+.item1, .item2, .item{
+	position: relative;
+}
+h2{
+	position: absolute;
+	top: 70px;
+	left: 5px;
+	font-weight: bold;
+	color: black;
+	font-size: 17px;
+	background-color: rgba(228, 209, 209, 0.836);
+	text-align:center ;
+}
+h3{
+	height: 50px;
+	line-height: 50px;
+	border:1px solid black;	
+	border-radius: 10px;
+	background-color: cadetblue;
+}
+/* -------------------------------------------------footer */
+.footer {
+    padding: 10px 0 0;    
+	background-color: rgb(255, 186, 0);
+}
+.footer-items li {
+    position: relative;
+	list-style: none;
+	text-align: center;
+}
+.footer-items li a {
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+	text-decoration: none;
+}
+.footer-items li a:hover{
+	text-decoration: underline;
+}
+.footer-items li:last-child i {
+    font-size: 17px;
+    margin-right: 12px;
+    color: #333333;
+}
+.footer-items img {
+    width: 100px;
+}
+.footer-text {
+    text-align: center;
+    font-size: 17px;
+}
+.footer-bottom {
+    padding: 10px 0;
+    font-size: 17px;
+    background-color: #dddddd;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;    
+}
+
+/* -------------------------------------------Đồ gia dụng, điện tử, đồng hồ */
+.container1 {	
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+} 
+.col-2th {
+    flex: 0 0 18%;
+    max-width: 18%;
+	padding: 10px;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.name a{
+	text-decoration:none;
+	color: black;
+}
+.name p:hover{
+	text-decoration: underline;
+}
+p {
+    margin: 10px 0 10px 0;
+}
+.title h3 {
+    font-size: 32px;	
+}
+.aa{
+	text-align: center;
+}
+.image img {
+    width: 100%;
+}
+.image img:hover{
+	transform: scale(1.05);
+}
+.card {
+    margin-bottom: 20px;
+}
+.menu_footer1 a:hover {
+    color: red;
+	text-decoration: underline;
+}
+.menu_footer1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.row_footer1 {
+    display: block;     
+    padding: 20px 0 10px 0;
+}
+ul.menu_footer1 li {
+    list-style: none;
+}
+.row_footer1 {
+    padding-bottom: 20px;
+}
+
+ 
+
